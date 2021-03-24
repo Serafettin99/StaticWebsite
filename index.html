@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header id="main" class="head-foot">
       <div class="container">
         <div
           class="row"
@@ -588,27 +588,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img
-                    class="card-img-top img-fluid"
-                    style="height: 15rem; width: auto"
-                    src="./assets/products/Soudal2.jpg"
-                    alt="Soudal2"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Soudal2</h5>
-                    <p class="card-text">
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
+
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
                   <img
@@ -660,7 +640,45 @@
       </div>
       <!-- /Products -->
     </main>
-    <footer></footer>
+    <footer class="bg-dark py-5 head-foot">
+      <div class="container text-white">
+        <div class="row justify-content-around">
+          <div class="col-md-2 mb-4">
+            ​<picture>
+              <source
+                srcset="./assets/products/logo.jpg"
+                type="image/svg+xml"
+              />
+              <img
+                src="./assets/products/logo.jpg"
+                class="img-fluid img-thumbnail p-0"
+                alt="..."
+              />
+            </picture>
+          </div>
+
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li class="text-muted mb-3">SAYFADA GİT</li>
+              <li><a href="#about-us">HAKKIMIZDA</a></li>
+              <li><a href="#products">KOLEKSİYON</a></li>
+              <li><a href="#main">ANASAYFA</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li class="text-muted mb-3">İLETİŞİM</li>
+              <li>
+                Adres : Talatpaşa Mahallesi 1000. Sokak No: 153
+                Esenyurt/İSTANBUL
+              </li>
+              <li>Telefon : +90 538 501 35 67</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap-->
     <script

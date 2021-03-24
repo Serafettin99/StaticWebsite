@@ -52,7 +52,7 @@ body {
 
 /* Header **/
 
-header {
+.head-foot {
   background-color: var(--linear-color);
   background-image: linear-gradient(
     to right,
