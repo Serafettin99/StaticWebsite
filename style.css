@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto:wght@300&family=Sofia&display=swap");
+
+:root {
+  --primary-color: #211f20;
+  --linear-color: #504f4f;
+  --secondary-color: #ffc4124d;
+  --secondary-linear: #f26923;
+  --light-gray: #2b3032a1;
+  --border: #2b303218;
+  --text-color: #ff686b4b;
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color) !important;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.font-roboto {
+  font-family: var(--roboto);
+}
+
+.font-sofia {
+  font-family: var(--sofia);
+}
+
+.font-anton {
+  font-family: var(--gugi);
+}
+
+.lightblue {
+  color: lightblue;
+}
+
+body {
+  background-color: var(--secondary-color);
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--secondary-linear)
+  );
+}
+
+/* Header **/
+
+header {
+  background-color: var(--linear-color);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--linear-color)
+  );
+
+  font-family: var(--roboto);
+}
+
+header .site-title {
+  font-family: var(--gugi);
+}
+
+.container-dropdown-toggle,
+.container-dropdown--item {
+  font-size: 07em;
+}
+
+.header-links a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation Menu **/
+
+.navbar-nav {
+  padding: 0.8 em 0em;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.9 em;
+  color: var(--light-gray) !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon {
+  margin-right: 6.5rem !important;
+}
+
+/* Slider One**/
+.site-slider {
+  position: relative;
+}
+
+.position-top {
+  position: absolute;
+  top: 45%;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next {
+  background-color: var(--linear-color);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--linear-color)
+  );
+
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: white;
+  margin: 0 1rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next {
+  opacity: 1;
+}
+.right-0 {
+  right: 0;
+}
+
+/* Slick Dots*/
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+.slider-one {
+  display: flex;
+  align-items: center;
+}
+
+.slick-dots li {
+  margin: 0 0.6rem;
+}
+
+.slick-dots button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  background-color: white;
+  text-indent: -99999px;
+  border-radius: 100%;
+}
+
+.slick-dots li.slick-active button {
+  transform: scale(2.5);
+  box-shadow: 0px 3px 5px 1px black;
+}
+
+/* Second Slider */
+.site-slider-two {
+  position: relative;
+  height: 30%;
+}
+
+.site-slider-two .products {
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-slider-two .products img {
+  width: 90%;
+  margin: auto;
+}
+
+.site-btn .btn-span {
+  padding: 0.8rem 1.9rem;
+  border-radius: 4rem;
+  border: 1px solid var(--border);
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.images {
+  height: 80vh;
+}
